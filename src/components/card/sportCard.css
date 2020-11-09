@@ -1,0 +1,52 @@
+.sport-card.card{
+    margin-bottom: 10px;
+    border-radius: 0px;
+    padding: 10px;
+    margin-left: 0px;
+}
+.unlock-button{
+    display: none;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+    opacity: 80%;
+    background-color: whitesmoke;
+    backdrop-filter: blur(5px);
+}
+
+.sport-card .card-subtitle{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+}
+
+.sport-card .card-title{
+    border-bottom: solid #636e72 0.5px;
+}
+
+.sport-card .card-body{
+    /* background-color: #dfe6e9; */
+}
+
+.locked .unlock-button {
+    display: flex;
+}
+
+.sport-card .card-img-overlay{
+    display: none;
+}
+
+.locked .card-img-overlay {
+    display: flex;
+}
+
+
+
+.won .card-body{
+    background-color: #55efc4;
+}
+
+.lost .card-body{
+    background-color: #ff7675;
+}

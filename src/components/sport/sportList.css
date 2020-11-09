@@ -1,0 +1,15 @@
+.sport-list {
+    margin-top: 10px;
+
+}
+
+.sport-list.container{
+    padding-left: 0px;
+}
+
+.title.card{
+    background-color: #1abc9c;
+    padding: 5px;
+    font-size: 1.5em;
+    color: white;
+}
