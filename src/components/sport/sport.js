@@ -33,7 +33,6 @@ function Sport() {
         client.get('/bet/pending/', { params })
 
             .then(res => setActiveBets(res.data));
-
     }
 
     const loadOldBets = () => {
@@ -56,6 +55,9 @@ function Sport() {
                 <Col xs={2} className="menu-col">
                     <Container className="sport-filter">
                         <Row>
+                            <h2>Sport picks</h2>
+                        </Row>
+                        <Row className="filter-row">
                             <label htmlFor="sportFilter">Sport:</label>
                             <select id="sportFilter" className="sport form-control" value={sport} onChange={sportChange}>
                                 <option value="">All</option>
@@ -63,8 +65,8 @@ function Sport() {
                                 <option value="Soccer">Football</option>
                             </select>
                         </Row>
-                        <hr />
-                        <Row>
+
+                        <Row className="filter-row">
                             <label htmlFor="live">Prematch/Live</label>
                             <select id="live" className="sport form-control" value={live} onChange={liveChange}>
                                 <option value="">All</option>
@@ -75,8 +77,6 @@ function Sport() {
                     </Container>
                 </Col>
                 <Col>
-                    <h2>Sport</h2>
-
                     <SportList elements={activeBets} title="Active picks" />
                     <SportList elements={oldBets} title="Older picks" />
                 </Col>

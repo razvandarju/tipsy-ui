@@ -10,8 +10,9 @@ function SportList(props) {
             <Card className="title">{props.title}</Card>
 
             {
-                props.elements.length == 0 ? <Card className="empty">There are no picks</Card>
-                    : props.elements.map((el) => <SportCard key={el._id} bet={el} />)
+                props.elements.length == 0 ?
+                    <Card className="empty">There are no picks</Card>
+                    : props.elements.map((el) => <SportCard className="sport-card" key={el._id} bet={el} />)
 
             }
         </Container>

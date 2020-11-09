@@ -1,6 +1,5 @@
 .sport-list {
     margin-top: 10px;
-
 }
 
 .sport-list.container{
@@ -12,4 +11,16 @@
     padding: 5px;
     font-size: 1.5em;
     color: white;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.empty.card {
+    border-radius: 0px;
+    border:0px;
+}
+
+.sport-card.card {
+    border-radius: 0px;
+    border:0px;
 }
